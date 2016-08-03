@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Евгений Шуруб](https://up.htmlacademy.ru/htmlcss/14/user/227942).
-* Наставник: [Альберт Шариков](https://up.htmlacademy.ru/htmlcss/14/user/61579).
+* Наставник: [Альберт наставник Шариков](https://up.htmlacademy.ru/htmlcss/14/user/61579).
 
 ---
 
