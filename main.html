@@ -3,17 +3,23 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Техномарт</title>
+	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-	<header class="main-header">
+	<header class="main-header clearfix">
+		<div class="container clearfix">
 		<div class="header-top">
-			<a class="logo" href="#">Техномарт</a>
-			<input type="search" placeholder="Поиск">
-			<a href="#">Закладки: 0</a>
-			<a href="#">Корзина: 0</a>
-			<a href="#">Оформить заказ</a>
+			<div class="header-top-left">
+				<a class="logo" href="#">Техномарт</a>
+				<input type="search" placeholder="Поиск">
+			</div>
+			<div class="header-top-right">
+				<a href="#">Закладки: 0</a>
+				<a href="#">Корзина: 0</a>
+				<a href="#">Оформить заказ</a>
+			</div>
 		</div>
-		<div class="header-middle">
+		<div class="header-middle clearfix">
 			<div class="middle-info">
 				<p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
 			</div>
@@ -37,63 +43,66 @@
 				<li><a href="#">Контакты</a></li>
 			</ul>
 		</nav>
+		</div>
 	</header>
-	<main class="container">
-		<div class="top-content">
-			<div class="material">
-				<div class="material-name">
-					<h2>Материалы</h2>
+	<main class="container clearfix">
+		<div class="top-content clearfix">
+			
+				<div class="material">
+					<div class="material-name">
+						<h2>Материалы</h2>
+					</div>
+					<div class="material-link">
+						<a href="#">На любой вкус</a>
+					</div>
+					<div class="material-logo">
+						<img src="img\bucket.png">
+					</div>
 				</div>
-				<div class="material-link">
-					<a href="#">На любой вкус</a>
+				<div class="instrument">
+					<div class="instruments-name">
+						<h2>Инструменты</h2>
+					</div>
+					<div class="instrument-link">
+						<a href="#">На все случаи</a>
+					</div>
+					<div class="instrument-logo">
+						<img src="img\drill.png">
+					</div>				
 				</div>
-				<div class="material-logo">
-					<img src="img\bucket.png">
+				<div class="technic">
+					<div class="tecnic-name">
+						<h2>Техника</h2>
+					</div>
+					<div class="technic-link">
+						<a href="#">Для стройки</a>
+					</div>
+					<div class="technic-logo">
+						<img src="img\truck.png">
+					</div>				
 				</div>
-			</div>
-			<div class="instrument">
-				<div class="instruments-name">
-					<h2>Инструменты</h2>
+				<div class="sale">
+					<div class="sale-name">
+						<h2>Скидки 50%</h2>
+					</div>
+					<div class="sale-link">
+						<a href="#">На 350 товаров</a>
+					</div>
+					<div class="sale-logo">
+						<img src="img\sale.png">
+					</div>				
 				</div>
-				<div class="instrument-link">
-					<a href="#">На все случаи</a>
-				</div>
-				<div class="instrument-logo">
-					<img src="img\drill.png">
-				</div>				
-			</div>
-			<div class="technic">
-				<div class="tecnic-name">
-					<h2>Техника</h2>
-				</div>
-				<div class="technic-link">
-					<a href="#">Для стройки</a>
-				</div>
-				<div class="technic-logo">
-					<img src="img\truck.png">
-				</div>				
-			</div>
-			<div class="sale">
-				<div class="sale-name">
-					<h2>Скидки 50%</h2>
-				</div>
-				<div class="sale-link">
-					<a href="#">На 350 товаров</a>
-				</div>
-				<div class="sale-logo">
-					<img src="img\sale.png">
-				</div>				
-			</div>
-			<div class="delivery">
-				<div class="delivery-name">
-					<h2>Доставка</h2>
-				</div>
-				<div class="delivery-link">
-					<a href="#">Бесплатно</a>
-				</div>
-				<div class="delivery-logo">
-					<img src="img\car.png">
-				</div>				
+				<div class="delivery">
+					<div class="delivery-name">
+						<h2>Доставка</h2>
+					</div>
+					<div class="delivery-link">
+						<a href="#">Бесплатно</a>
+					</div>
+					<div class="delivery-logo">
+						<img src="img\car.png">
+					</div>				
+				
 			</div>
 			<div class="promo-slider">
 					<div clas="slider-1">
@@ -135,11 +144,11 @@
 				</div>
 		</div>
 		<div class="botton-container">
-			<div class="container-content">
+			<div class="container-content clearfix">
 				<h2 class="container-title">Популярные товары:</h2>
 				<a class="container-link" href="#">Все популярные товары</a>
 			</div>
-			<div class="container-icon">
+			<div class="container-icon clearfix">
 				<article class="item">
 						<img src="img\bfg-9000.jpg">
 						<p>Перфоратор BOSH BFG 9000</p>
@@ -198,12 +207,12 @@
 				</article>
 			</div>
 		</div>
-			<div class="botton-container">
-				<div class="container-content">
+			<div class="botton-container clearfix">
+				<div class="container-content clearfix">
 					<h2 class="container-title">Популярные производители</h2>
 					<a class="container-link" href="#">Все производители</a>
 				</div>
-				<div class="container-icon">
+				<div class="container-icon clearfix">
 						<a href="#"><img src="C:\Users\Eugene\Documents\GitHub\227942-technomart\img\bosch.jpg"></a>
 						<a href="#"><img src="C:\Users\Eugene\Documents\GitHub\227942-technomart\img\Makita.jpg"></a>
 						<a href="#"><img src="C:\Users\Eugene\Documents\GitHub\227942-technomart\img\DeWALT.jpg "></a>
@@ -245,7 +254,7 @@
 				</div>
 			</div>
 		</div>	
-			<div class="company">
+			<div class="company clearfix">
 				<div class="company-left">
 					<h2 class="company">Компания "Техномарт"</h2>
 					<p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
