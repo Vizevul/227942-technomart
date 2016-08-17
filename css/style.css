@@ -1,21 +1,329 @@
+﻿html,
 body {
-  font-size: ;
-  line-height: ;
-  color: ;
-  font-weight: ;
-  font-family: ;
+  min-width: 1122px;
+  min-height: 1750px;
+  margin: 0px;
+  padding: 0px;
 }
-h1{
-  font-size: ;
-  line-height: ;
-  color: ;
-  font-weight: ;
-  font-family: ;
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
-h2 {
-  font-size: ;
-  line-height: ;
-  color: ;
-  font-weight: ;
-  font-family: ;
+
+.header-top {
+  margin-bottom: 20px;
+}
+
+.header-top-left {
+  float: left;
+  width: 253px;
+}
+
+.header-top-right {
+  margin-left: 640px;
+  width: 280px;
+}
+
+.header-top-right a {
+  text-decoration: none;
+ } 
+
+.middle-info {
+  float: left;
+  width: 300px;
+  min-height: 103px;
+  margin-right: 20px;
+}
+
+.middle-contacts {
+  float: left;
+  width: 300px;
+  min-height: 103px;
+  margin-right: 20px;
+}
+
+.user-box {
+  float: left;
+  width: 300px;
+  min-height: 103px;
+}
+
+.user-box a {
+  text-decoration: none;
+}
+
+.main-navigation a {
+  text-decoration: none;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0px 10px;
+}
+
+.material {
+  float: left;
+  width: 260px;
+  height:85px;
+  padding: 20px;
+  margin-right: 20px;
+}
+
+.material-logo {
+  float: right;
+  margin-top: -80px;
+}
+
+.instrument {
+  float: left;
+  width: 260px;
+  height:85px;
+  padding: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.instrument-logo {
+  float: right;
+  margin-top: -80px;
+}
+
+.technic {
+  float: right;
+  width: 260px;
+  height:85px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.technic-logo {
+  float: right;
+  margin-top: -80px;
+}
+
+.sale {
+  float: right;
+  width: 260px;
+  height:85px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.sale-logo {
+  float: right;
+  margin-top: -80px;
+}
+
+.delivery {
+  float: right;
+  width: 260px;
+  height:85px;
+  padding: 20px;
+  margin-bottom: 20px;
+  clear: both;
+}
+.delivery-logo {
+  float: right;
+  margin-top: -80px;
+}
+
+.container-title { 
+  float: left;
+  width: 50px;
+ }
+
+.container-link {
+  float: right;
+  width: 100px;
+  margin-right: 2px;
+}
+
+.item {
+  float: left;
+  margin-right: 20px;
+}
+.item:last-child {
+  margin-right: 0px;
+}
+
+.company-left {
+  width: 500px;
+  float: left;
+  margin-right: 1px;
+}
+
+.company-right {
+  width: 435px;
+  float: right;
+  margin-right: 0px;
+}
+
+/*фильтр*/
+.content-left {
+  width: 330px;
+  display: inline-block;
+}
+
+/*сортировка товаров*/
+.content-right {
+  display: inline-block;
+  width: 605px;
+  float: right;
+}
+
+/*изображения товаров в катаоге*/
+.catalog-goods .item{  
+  margin-bottom: 10px;
+
+}
+
+.content-bottom {
+  clear: both;
+}
+
+
+
+
+
+
+
+
+
+/*======================================
+ Системное оформление - не изменять
+=======================================*/
+
+body {
+  padding: 3px;
+}
+
+body > *,
+body > * > *,
+body > * > * > * {
+  position: relative;
+}
+
+body > *::before,
+body > * > *::before,
+body > * > * > *::before {
+  display: none;
+}
+
+body > *::before {
+  top: -3px;
+  left: -3px;
+}
+
+body > * > *::before {
+  top: -3px;
+  left: -3px;
+}
+
+body > * > * > *::before {
+  top: 0;
+  left: 0;
+}
+
+body > * {
+  background: rgba(0, 128, 0, 0.2);
+  box-shadow: 0 0 0 3px green;
+}
+
+body > *::before {
+  color: white;
+
+  background: green;
+}
+
+body > * > * {
+  background: rgba(255, 45, 82, 0.2);
+  box-shadow: 0 0 0 3px rgb(255, 45, 82);
+}
+
+body > * > *::before {
+  color: white;
+
+  background: rgb(255, 45, 82);
+}
+
+body > * > * > * {
+  background: rgba(234, 255, 45, 0.2);
+  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+
+}
+
+body > * > * > *::before {
+  color: black;
+
+  background: rgb(234, 255, 45);
+}
+
+.main-header::before {
+  content: ".main-header";
+}
+
+.container::before {
+  content: ".container";
+}
+
+.main-header .container::before {
+  top: auto;
+  bottom: -28px;
+}
+
+.main-navigation::before {
+  content: ".main-navigation";
+}
+
+.user-block::before {
+  content: ".user-block";
+}
+
+.index-logo::before {
+  content: ".index-logo";
+}
+
+.features::before {
+  content: ".features";
+  top: -28px;
+}
+
+.features-item::before {
+  content: ".features-item";
+}
+
+.index-content::before {
+  content: ".index-content";
+}
+
+.index-content-left::before {
+  content: ".index-content-left";
+  left: auto;
+  right: 0;
+}
+
+.index-content-right::before {
+  content: ".index-content-right";
+  left: auto;
+  right: 0;
+}
+
+.main-footer::before {
+  content: ".main-footer";
+}
+
+.main-footer .container::before {
+  top: -28px;
+}
+
+.footer-contacts::before {
+  content: ".footer-contacts";
+}
+
+.footer-social::before {
+  content: ".footer-social";
+}
+
+.footer-copyright::before {
+  content: ".footer-copyright";
 }
