@@ -1,4 +1,4 @@
-﻿html,
+html,
 body {
   min-width: 1122px;
   min-height: 1750px;
@@ -21,9 +21,7 @@ a {
   background: #f1f5f7;
   height: 320px;
 }
-.header-top {
-  padding-left: 162px;
-  padding-right: 161px;
+.header-top {  
   height: 42px;
   margin-bottom: 50px;  
   background: #293449;
@@ -47,29 +45,34 @@ a {
   border-bottom: solid #b72f38 5px;
   text-decoration: none;
 }
+
 .header-top-left .logo:hover {
 background: #ca2c37;
 }
+
 .header-top-left .logo:active {
 background: #ba2732;
 }
+
 .header-top-left input {
-  vertical-align: top;
-  border: #293449;
+  vertical-align: top;  
+  margin: 0 -4px;
   height: 41px;
- margin: 0 -4px;
   width: 270px;
   background: #293449;
+  border: #293449;
 }
+
 .header-top-left input:hover {
 background: #212a3a;
 color: #d3d4d8;
 }
+
 .header-top-left input:active {
-background: #212a3a;
 background: #ffffff;
 color: #333333;
 }
+
 .header-top-right {
   float: right;
   width: 410px;
@@ -78,20 +81,21 @@ color: #333333;
 
 .header-top-right a {
   display: inline-block;
-  width: 103px;
+  vertical-align: middle;
   padding-left: 45px;
   padding-top: 12px;
+  width: 102px;
   height: 30px;
   color: white;
   text-decoration: none;
   
  } 
 
-
 .header-top-right a:first-child {
   margin-left: -40px;
+  margin-right: 0;
+  width: 110px;
 }
-
 
 .header-top-right a:first-child:hover {
   background: #212a3a;
@@ -101,10 +105,10 @@ color: #333333;
   background: #161d29;
   color: #8b8e94;
 }
+
 .header-top-right a:nth-child(2n) {
   margin-left: -4px;
-  margin-right: 0px;
-  width: 105px;
+  width: 103px;
 }
 .header-top-right a:nth-child(2n):hover {
   background: #212a3a;
@@ -116,7 +120,7 @@ color: #333333;
 
 .header-top-right a:last-child {
   float: right;
-  display: inline-block;
+  
   width: 133px;
   margin-left: -21px;
   padding-left: 17px;
@@ -156,7 +160,6 @@ color: #333333;
 }
 .middle-contacts p:first-child {
   text-align: center;
-  vertical-align: middle;
   padding: 10px;
   border: solid white 3px;
   height: 20px;
@@ -201,15 +204,13 @@ color: #333333;
 }
 .user-box .registration {
   float: right;
-  display: inline-block;
   padding-top: 15px;
   padding-left: 25px;
   padding-right: 27px;  
   margin-right: 0;
-  display: inline-block;
   height: 30px;
   width: 101px;
-background: white;
+  background: white;
   text-decoration: none;
   color: #000000;
 }
@@ -444,8 +445,8 @@ background-color: #293449;
   color: white;
   }
 
-  .title-slider p {
-    margin-top: 0px;
+.title-slider p {
+  margin-top: 0px;
   margin-left: 25px;
   width: 220px;
   color: white;
@@ -486,7 +487,6 @@ background-color: #293449;
 
 .container-title { 
   display: inline-block;
-
   margin: 33px   0px 0 30px;
   width: 400px;
   height: 30px;
@@ -495,8 +495,7 @@ background-color: #293449;
 
 
 .container-link {
-  float: right;
-  display: inline-block;  
+  float: right;  
   text-align: center;
   padding: 10px 42px;
   width: 169px;
@@ -514,24 +513,18 @@ background-color: #293449;
 }
 
 
-.item {
-  display: inline-block;
-  width: 218px;
+.item {  
+  width: 217px;
   height: 320px;
   float: left;
   margin-right: 20px;
   margin-bottom: 21px;
   border: solid #e5e5e5 1px;
 }
-.item:hover {
-
-  }
 
 .item:nth-child(4n) {
-  display: inline-block;
   float: right;
-  margin-right: 0px;
-  margin-bottom: 0px;
+  margin: 0;
 }
 
 .item img {
@@ -613,6 +606,7 @@ margin: 0;
   padding-top: 65px;
   margin-bottom: 35px;
   }
+
 .service-slider{
   margin-top: 90px;
   display: inline-block;
@@ -649,18 +643,19 @@ margin: 0;
 margin-top: 80px;
 margin-bottom: 0;
 }
+
 .company-left p{
   margin-top: 40px;
   margin-bottom: 27px;
-
   }
+
 .company-left a{
   display: inline-block;
   vertical-align: middle;
   margin-top: 40px;
   text-align: center;
   padding: 9px 40px;
-  width: 157px; /*должна быть ширина 140px*/ 
+  width: 157px;
   background: #ee3643;
   color: white;
   text-decoration: none;
@@ -725,13 +720,13 @@ margin-bottom: 0;
 .footer-top {
   display: inline-block;
   width: 935px;
-  height: 193px;
+  height: 80px;
+  margin-bottom: 10px;
 
 }
   
 .footer-top-top .logo{ 
   float: left;
-  display: inline-block;
   text-align: center;
   vertical-align: middle;
   padding-top: 12px;
@@ -743,15 +738,15 @@ margin-bottom: 0;
   font-size: 30px;
   border-bottom: solid #b72f38 5px; 
   }
+
 .footer-top-top .logo:hover {
-background: #ca2c37;
+  background: #ca2c37;
 }
 .footer-top-top .logo:active {
-background: #ba2732;
+  background: #ba2732;
 }
 .promo-1 ul { 
   float: right;
-  display: inline-block;
   margin: 40px 130px 0 0px;
   padding: 0;
   width: 415px;
@@ -782,7 +777,6 @@ background: #ba2732;
 
 .adress {
   float: left;
-  display: inline;
   width: 325px;  
   margin-left: 5px;
   margin-right: 85px;
@@ -792,26 +786,26 @@ background: #ba2732;
 .promo-2 li{
   display: inline;
   margin-right: 12px;
-  
 }
 
 .promo-2 li a {
   color: #f1c77e;
 }
+
 .promo-2 li a:hover {
   border-bottom: solid #f1c77e 1px;
-  }
-  .promo-2 li a:active {
-    color: #998a6e;
+}
+
+.promo-2 li a:active {
+  color: #998a6e;
   border-bottom: none;
-  }
+}
 .promo-2 li:last-child{
   margin-right: 0px;
 
-  }
+}
 
 .footer-bottom {
-  padding-left: 170px;
   background: #293449;
   color: #f1f5f7;
 }
@@ -819,6 +813,7 @@ background: #ba2732;
 .footer-bottom  a{
   color: #d4b275;
 }
+
 .copyrights {
   float:left;
   width: 200px;
@@ -840,18 +835,19 @@ background: #ba2732;
 
 .mail a:hover{
   border-bottom: solid #ffd180 1px; 
-
 }
+
 .mail a:active{
 color: #ee3643;
 border-bottom: none;
   }
-.design{
-  
+
+.design {  
   display: inline-block;
   margin-right: 50px;
   width: 105px;
 }
+
 .design:last-child{
   margin-right: 0;
 }
@@ -859,6 +855,7 @@ border-bottom: none;
 .design:last-child a:hover{
 border-bottom: solid #ffd180 1px;
 }
+
 .design:last-child a:active{
   color: #ee3643;
   border-bottom: none;
@@ -1072,7 +1069,7 @@ border-bottom: solid #b7bfc8 1px;
 }
 
 .content-bottom {
-  clear: both;
+  
   background: rgb(242,246,248);
 }
 .content-bottom h2, .content-bottom p {
@@ -1084,141 +1081,3 @@ border-bottom: solid #b7bfc8 1px;
 
 
 
-/*======================================
- Системное оформление - не изменять
-=======================================*
-
-body {
-  padding: 3px;
-}
-
-body > *,
-body > * > *,
-body > * > * > * {
-  position: relative;
-}
-
-body > *::before,
-body > * > *::before,
-body > * > * > *::before {
-  display: none;
-}
-
-body > *::before {
-  top: -3px;
-  left: -3px;
-}
-
-body > * > *::before {
-  top: -3px;
-  left: -3px;
-}
-
-body > * > * > *::before {
-  top: 0;
-  left: 0;
-}
-
-body > * {
-  background: rgba(0, 128, 0, 0.2);
-  box-shadow: 0 0 0 3px green;
-}
-
-body > *::before {
-  color: white;
-
-  background: green;
-}
-
-body > * > * {
-  background: rgba(255, 45, 82, 0.2);
-  box-shadow: 0 0 0 3px rgb(255, 45, 82);
-}
-
-body > * > *::before {
-  color: white;
-
-  background: rgb(255, 45, 82);
-}
-
-body > * > * > * {
-  background: rgba(234, 255, 45, 0.2);
-  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
-
-}
-
-body > * > * > *::before {
-  color: black;
-
-  background: rgb(234, 255, 45);
-}
-
-.main-header::before {
-  content: ".main-header";
-}
-
-.container::before {
-  content: ".container";
-}
-
-.main-header .container::before {
-  top: auto;
-  bottom: -28px;
-}
-
-.main-navigation::before {
-  content: ".main-navigation";
-}
-
-.user-block::before {
-  content: ".user-block";
-}
-
-.index-logo::before {
-  content: ".index-logo";
-}
-
-.features::before {
-  content: ".features";
-  top: -28px;
-}
-
-.features-item::before {
-  content: ".features-item";
-}
-
-.index-content::before {
-  content: ".index-content";
-}
-
-.index-content-left::before {
-  content: ".index-content-left";
-  left: auto;
-  right: 0;
-}
-
-.index-content-right::before {
-  content: ".index-content-right";
-  left: auto;
-  right: 0;
-}
-
-.main-footer::before {
-  content: ".main-footer";
-}
-
-.main-footer .container::before {
-  top: -28px;
-}
-
-.footer-contacts::before {
-  content: ".footer-contacts";
-}
-
-.footer-social::before {
-  content: ".footer-social";
-}
-
-.footer-copyright::before {
-  content: ".footer-copyright";
-}
