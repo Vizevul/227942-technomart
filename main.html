@@ -10,7 +10,7 @@
 <body>
 	<header class="main-header clearfix">
 		
-			<div class="header-top">
+			<div class="header-top clearfix">
 				<div class="container">
 					<div class="header-top-left">
 						<a class="logo" href="#">Техномарт</a>
@@ -37,7 +37,7 @@
 					<a class="registration" href="#">Регистрация</a>
 				</div>
 			</div>
-			<nav class="main-navigation">
+			<nav class="main-navigation clearfix">
 				<ul>
 					<li><p>Главная</p></li>
 					<li><a href="#">Компания</a></li>
@@ -107,52 +107,59 @@
 					<div class="delivery-logo">
 						<img src="img/car.png" alt="доставка">
 					</div>				
-				
 			</div>
-			<div class="promo-slider">
-
-					<div class="slider-1">
-						<div class="title-slider">
-							<h2>Перфораторы</h2>
-							<p>Настоящие мужские игрушки</p>
-						</div>
-						<div class="slider-catalog">
-							<a href="#">Открыть каталог</a>
-													
-						</div>
-						
-						<div class="slider-btn">
-							<label for="btn-left"></label>
-							<label for="btn-right"></label>
-						</div>
-						<div class="slider-carousel">
-							<input id="btn-left" name="togle" checked type="radio">
-							<input id="btn-right" name="togle" type="radio">
-						</div>
-					</div>
-					
-				<!--
-					<div clas="slider-2">
-						<div class="title-slider">
-							<h2>Дрели</h2>
-							<p>Соседям на радость!</p>
-						</div>
-						<div class="slider-catalog">
-							<a href="#">Открыть каталог</a>
-							<img src="img\man-with-drill.jpg">							
-						</div>
-						
-						<div class="slider-btn">
-							<label for="btn-left"></label>
-							<label for="btn-right"></label>
-						</div>
-					</div>
-
-					-->
-
-				</div>
 			
+			
+			
+			
+			
+			
+			<div class="promo-slider">
+				<div class="slider clearfix">
+				
+						<input type="radio" id="rock-drill" name="service-slider-controll" class="rock-drill" checked>	
+						<input type="radio" id="drill" name="service-slider-controll" class="drill">
+								
+								<div class="slider-arrows">
+									<label class="slider-btn-right" for="rock-drill"</lavel>
+									<label class="slider-btn-left" for="drill"></label>
+								</div>
+							
+						<div class="slider">
+							
+								<div class="slide" >
+									<div class="title-slider">
+										<h2>Перфораторы</h2>
+										<p>Настоящие мужские игрушки</p>
+									</div>
+									<div class="slider-catalog">
+										<a href="#">Открыть каталог</a>											
+									</div>									
+								</div>
+
+								<div class="slide">
+										<div class="title-slider">
+											<h2>Дрели</h2>
+											<p>Соседям на радость!</p>
+										</div>
+
+										<div class="slider-catalog">
+											<a href="#">Открыть каталог</a>									
+										</div>
+								</div>
+								
+								<div class="slider-controls">						
+									<label for="rock-drill"></label>							
+									<label for="drill"></label>
+								</div>
+								
+						</div>
+							</div>												
+					</div>
 		</div>
+		
+		
+		
 		<div class="botton-container clearfix">
 			<div class="container-content clearfix">
 				<h2 class="container-title">Популярные товары:</h2>
@@ -170,7 +177,7 @@
 					</div>
 					<h2>Перфоратор BOSCH BFG 9000</h2>
 					<div class="old-price">32500 Р.</div>
-					<div class="new-price">25500 Р.<div>
+					<div class="new-price">25500 Р.</div>
 				</article>
 				
 				<article class="item">
@@ -244,38 +251,51 @@
 			</div>
 			<div class="service clearfix">
 				<div class="container claerfix">
+				
+						
 					<div class="service-top clearfix">
 						<h2>Сервисы</h2>
 						<p>Хороший интернет-магазин отличается от плохого не только ценами!</p>
 						<p>Мы стараемся изо всех сил, что бы сделать ваши покупки приятными.</p>
 					</div>
-					<div class="service-slider">
-						<input id="delivery-btn" name="btn" checked type="radio">
-						<input id="guranty-btn" name="btn" type="radio">
-						<input id="credit-btn" name="btn" type="radio">
+						
+					<input id="btn1" name="slider" type="radio" checked>
+					<input id="btn2" name="slider" type="radio">
+					<input id="btn3" name="slider" type="radio">
+					
+					<div class="service-slider-controlls">
+						<label for="btn1">Доставка</label>
+						<label for="btn2">Гарантия</label>
+						<label for="btn3">Кредит</label>
+						<img class="shadow" src="img/shadow.png" alt="shadow">
 					</div>
-					<div class="service-slider-btn">
-						<label for="delivery-btn">Доставка</label>
-						<label for="guaranty-btn">Гарантия</label>
-						<label for="credit-btn">Кредит</label>
+			
+					<div class="vertial-slider">
+						<div class="slider-text">
+							<div class="service-slide">
+								<p class="title">Доставка</p>
+								<p class="description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+							</div>
+							<div class="guaranty-slide">
+							<p class="title">Гарантия</p>
+							<p class="description">Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.</p><br>
+							<p>Дома уж восстановите как-нибудь сами.</p>
+						</div>
+						<div class="credit-slide">
+							<p class="title">Кредит</p>
+							<p class="description">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
+						</div>
 					</div>
-					<div class="service-slide">
-						<p class="title">Доставка</p>
-						<p class="description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
-					</div>
+					<div class="slider-img">
+						<img class="delivery-img" src="img/delivery.png" alt="delivery">
+						<img class="guaranty-img" src="img/guaranty.png" alt="guaranty">
+						<img class="credit-img" src="img/credit.png" alt="credit">
 				</div>
+				
+					</div>
 			</div>
-				<!--
-				<div class="guaranty-slide">
-					<p class="title">Гарантия</p>
-					<p class="description">Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.</p><br>
-					<p>Дома уж восстановите как-нибудь сами.</p>
-				</div>
-				<div class="credit-slide">
-					<p class="title">Кредит</p>
-					<p class="description">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
-				</div>
-				-->
+		</div>
+				
 		<div class="container">
 			<div class="company clearfix">
 				<div class="company-left">
@@ -311,6 +331,7 @@
 									<a href="#">Каталог</a>
 									<a href="#">Доставка</a>
 									<a href="#">Контакты</a>
+									
 						</div>
 				</div>
 			</div>
