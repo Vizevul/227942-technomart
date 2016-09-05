@@ -20,7 +20,7 @@
 			
 				<div class="header-top-right">
 					<a href="#">Закладки: 0</a>
-					<a href="#">Корзина: 10</a>
+					<a class="full" href="#">Корзина: 10</a>
 					<a href="#">Оформить заказ</a>
 				</div>
 			</div>
@@ -72,12 +72,16 @@
 				<h2>Цена:</h2>			
 				<form action="#" method="post">
 				<div class="content-left-filter">
-					<div class="prise-line">
-						<input type="range">
-					</div>
+					<div class="range-controls">
+          <div class="scale">
+            <div class="bar" style=" width: 90%"></div>
+          </div>
+          <div class="toggle toggle-min"></div>
+          <div class="toggle toggle-max"></div>
+        </div>
 					<div class="price-box">
-						<input type="text">
-						<input type="text">
+						<label class="min-price"><input type="text" name="min-price"></label>
+						<label class="max-price"><input type="text" name="max-price"></label>
 					</div>
 				</div>
 				<div class="content-left-list">
