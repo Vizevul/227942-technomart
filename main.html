@@ -8,7 +8,7 @@
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&subset=cyrillic" rel="stylesheet">
 </head>
 <body>
-	<header class="main-header clearfix">
+	<header class="main-header">
 		
 			<div class="header-top clearfix">
 				<div class="container">
@@ -18,12 +18,12 @@
 					</div>
 					<div class="header-top-right">
 						<a href="#">Закладки: 0</a>
-						<a href="#">Корзина: 0</a>
+						<a class="empty" href="#">Корзина: 0</a>
 						<a href="#">Оформить заказ</a>
 					</div>
 				</div>
 			</div>
-			<div class="container clearfix">
+			<div class="container">
 			<div class="header-middle clearfix">
 				<div class="middle-info">
 					<p>Интернет-магазин строительных материалов<br> и инструментов для ремонта</p>
@@ -37,9 +37,9 @@
 					<a class="registration" href="#">Регистрация</a>
 				</div>
 			</div>
-			<nav class="main-navigation clearfix">
+			<nav class="main-navigation">
 				<ul>
-					<li><p>Главная</p></li>
+					<li><span>Главная</span></li>
 					<li><a href="#">Компания</a></li>
 					<li><a href="catalog.html">Каталог</a></li>
 					<li><a href="#">Новости</a></li>
@@ -51,9 +51,9 @@
 		</div>
 	</header>
 	<main class="promo-content">
-	<div class="container clearfix">
+	<div class="container">
 		<div class="top-content clearfix">			
-				<div class="material">
+				<div class="material new">
 					<div class="material-name">
 						<h2>Материалы</h2>
 					</div>
@@ -115,7 +115,7 @@
 			
 			
 			<div class="promo-slider">
-				<div class="slider clearfix">
+				<div class="slider">
 				
 						<input type="radio" id="rock-drill" name="service-slider-controll" class="rock-drill" checked>	
 						<input type="radio" id="drill" name="service-slider-controll" class="drill">
@@ -160,8 +160,8 @@
 		
 		
 		
-		<div class="botton-container clearfix">
-			<div class="container-content clearfix">
+		<div class="botton-container">
+			<div class="container-content ">
 				<h2 class="container-title">Популярные товары:</h2>
 				<a class="container-link" href="#">Все популярные товары</a>
 			</div>
@@ -231,8 +231,8 @@
 				</article>
 			</div>
 		</div>
-			<div class="botton-container clearfix">
-				<div class="container-content clearfix">
+			<div class="botton-container">
+				<div class="container-content">
 					<h2 class="container-title">Популярные производители:</h2>
 					<a class="container-link" href="#">Все производители</a>
 				</div>
@@ -249,11 +249,11 @@
 				</div>
 			</div>
 			</div>
-			<div class="service clearfix">
-				<div class="container claerfix">
+			<div class="service">
+				<div class="container">
 				
 						
-					<div class="service-top clearfix">
+					<div class="service-top">
 						<h2>Сервисы</h2>
 						<p>Хороший интернет-магазин отличается от плохого не только ценами!</p>
 						<p>Мы стараемся изо всех сил, что бы сделать ваши покупки приятными.</p>
@@ -262,17 +262,16 @@
 					<input id="btn1" name="slider" type="radio" checked>
 					<input id="btn2" name="slider" type="radio">
 					<input id="btn3" name="slider" type="radio">
-					
+					<div class="vertical-slider">
 					<div class="service-slider-controlls">
 						<label for="btn1">Доставка</label>
 						<label for="btn2">Гарантия</label>
 						<label for="btn3">Кредит</label>
-						<img class="shadow" src="img/shadow.png" alt="shadow">
 					</div>
 			
-					<div class="vertial-slider">
+					
 						<div class="slider-text">
-							<div class="service-slide">
+							<div class="delivery-slide">
 								<p class="title">Доставка</p>
 								<p class="description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
 							</div>
@@ -284,13 +283,9 @@
 						<div class="credit-slide">
 							<p class="title">Кредит</p>
 							<p class="description">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
-						</div>
+							</div>
+								 
 					</div>
-					<div class="slider-img">
-						<img class="delivery-img" src="img/delivery.png" alt="delivery">
-						<img class="guaranty-img" src="img/guaranty.png" alt="guaranty">
-						<img class="credit-img" src="img/credit.png" alt="credit">
-				</div>
 				
 					</div>
 			</div>
@@ -335,7 +330,7 @@
 						</div>
 				</div>
 			</div>
-			<div class="footer-middle clearfix">
+			<div class="footer-middle">
 				<div class="footer-middle-content">
 					<div class="adress">
 							<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
@@ -351,7 +346,7 @@
 					</div>	
 			</div>
 		</div>		
-				<div class="footer-bottom clearfix">
+				<div class="footer-bottom">
 					<div class="container">
 						<div class="copyrights">
 							<p>© 2010-2016 Компания «Техномарт»</p>
