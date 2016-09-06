@@ -1,6 +1,6 @@
 html,
 body {
-  min-width: 1122px;
+  min-width: 960px;
   min-height: 1750px;
   margin: 0px;
   padding: 0px;
@@ -64,7 +64,7 @@ body {
 .icon-user::before { content: "👨"; } /* "\1f468" */
 .icon-phone::before { content: "📞"; } /* "\1f4de" */
 .icon-instagramm::before { content: "📷"; } /* "\1f4f7" */
-.icon-search::before { content: "🔍"; } /* "\1f50d" */
+
 .icon-bookmark::before { content: "🔖"; } /* "\1f516" */
 
 a {
@@ -116,6 +116,7 @@ background: #ba2732;
 }
 
 .header-top-left input {
+	position: relative;
   vertical-align: top;  
   margin: 0 -4px;
   width: 270px;
@@ -129,7 +130,11 @@ background: #ba2732;
   color: white;  
 
 }
-
+.header-top-left input::before { 
+	position: absolute;
+	font-family: "symbols-technomart";
+	content: "🔍"; 
+} /* "\1f50d" */
 
 .header-top-left input:hover {
 background: #212a3a;
@@ -155,15 +160,22 @@ color: #333333;
   text-decoration: none;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 17px;
-  font-weight: 400; 
-
-  
+  font-weight: 400;   
  } 
 
 .header-top-right a:first-child {
+	position: relative;
   margin-left: -40px;
   margin-right: 0;
   width: 110px;
+}
+.header-top-right a:first-child::before {
+	font-family: "symbols-technomart";
+	content: "\1f516";
+	position: absolute;
+	top: 10px;
+	left: 10px;
+ 
 }
 
 .header-top-right a:first-child:hover {
@@ -176,30 +188,46 @@ color: #333333;
 }
 
 .header-top-right .empty {
+	position: relative;
   margin-left: -4px;
   width: 100px;
 }
+.empty::before { 
+	font-family: "symbols-technomart";
+	position: absolute;
+	top: 12px;
+	left: 10px;
+	content: "\62"; 
+}
 .header-top-right .full {
+	position: relative;
   margin-left: -4px;
   width: 100px;
 	background: red;
 }
-.header-top-right a:nth-child(2n):hover {
+	.full::before { 
+		font-family: "symbols-technomart";
+	position: absolute;
+	top: 12px;
+	left: 10px;
+	content: "\62"; 
+}
+.header-top-right .empty:hover {
   background: #212a3a;
   }
 
-.header-top-right a:nth-child(2n):active {
+.header-top-right .empty:active {
   background: #161d29;
   color: #8b8e94;
   }
 
 .header-top-right a:last-child {
   float: right;  
-  width: 133px;
-  
-  padding: 12px 0px 12px 17px;
+  width: 133px;  
+  padding: 12px 0px 12px 16px;
   background: #63a63e;
 }
+
 
 .header-top-right a:last-child:hover {
   background: #5fbb2d;
@@ -240,6 +268,7 @@ color: #333333;
   margin-right: 90px;
 }
 .middle-contacts p:first-child {
+	position: relative;
   padding: 8px 8px 8px 70px;
   border: solid white 3px;
   width: 186px;
@@ -248,6 +277,14 @@ color: #333333;
   font-size: 21px;
   font-weight: 900;
   
+}
+.middle-contacts p:first-child::before {
+	font-family: "symbols-technomart";
+	position: absolute;
+	top: 10px;
+	left: 13px;
+	content: "📞"; 
+	color: #b7bfc8;
 }
 .middle-contacts p:last-child {
   display: inline-block;
@@ -276,6 +313,7 @@ color: #333333;
 }
 
 .user-box .enter {
+	position: relative;
   display: inline-block;
   padding: 10px 27px 10px 47px;  
   text-decoration: none;
@@ -285,6 +323,14 @@ color: #333333;
   background: white;
   color: #000000;
 }
+.enter::before {
+	font-family: "symbols-technomart";
+	position: absolute;
+	top: 10px;
+	left: 13px;
+	content: "\2386"; 
+}
+
 .user-box .enter:hover {
   color: #f36c75;
 }
@@ -886,7 +932,7 @@ background-color: #293449;
 
 .container-logo img {
  display: inline-block;
- vertical-align: bottom;
+vertical-align: middle;
  margin:  auto;
 }
 .container-logo a {
@@ -894,7 +940,7 @@ background-color: #293449;
   vertical-align: middle;
   width: 218px;
   margin-top: 20px;
-  margin-right: 16px;
+  margin-right: 15px;
   margin-bottom: 0px;
   border: solid #e7e7e7 1px;
   background: white;
@@ -1230,8 +1276,6 @@ font-weight: 100;
   width: inherit;
 	margin: 0 0 39px 0;
 }
-.footer-middle-content {
-}
 .adress {
   float: left;
   width: inherit;  
@@ -1247,7 +1291,7 @@ font-weight: 100;
 	display: inline-block;
 	width: inherit;
 	list-style: none;
-	margin: 10px 0 0 130px;
+	margin: 10px 0 0 129px;
 	padding: 0 0 0 0;
 	
 }
@@ -1293,9 +1337,38 @@ font-weight: 100;
   color: #d4b275;
 }
 .social{
+	position: relative;
   display: inline-block;
 	margin: 0 181px 0 0;
   width: auto;
+}
+.social a:first-child::before { 
+	position: absolute;
+	font-family: "symbols-technomart";
+	content: "\76"; 
+	background: #293449;
+	
+}
+.social .vk::before { 
+	position: absolute;
+	font-family: "symbols-technomart";
+	content: "\76"; 
+	background: #293449;
+	
+}
+.social .fb::before { 
+	position: absolute;
+	font-family: "symbols-technomart";
+	content: "\66"; 
+	background: #293449;
+	
+}
+.social .inst::before { 
+	position: absolute;
+	font-family: "symbols-technomart";
+	content: "\1f4f7"; 
+	background: #293449;
+	
 }
 .mail{
   display: inline-block;
