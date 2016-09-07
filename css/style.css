@@ -1322,13 +1322,13 @@ font-weight: 100;
 
 .company-map {
 	margin-bottom: 20px;
-  display: inline-block;
+  display: block;
   vertical-align: middle;
   height: 150px;  
 }
 
 .company-right a:last-child {
-  display: inline-block;
+  display: block;
   text-align: center;
   padding: 12px 46px 10px 51px;
   width: 203px;
@@ -1356,12 +1356,14 @@ font-weight: 100;
 .footer-top {
   display: inline-block;
   width: inherit;
+	padding: 0;
+	margin-top: 0px;
   margin-bottom: 20px;
 
 }
   
 .footer-top-content .logo{ 
-  float: left;
+  display: inline-block;;
   text-align: center;
   vertical-align: middle;
   padding: 9px 0 2px;
@@ -1375,7 +1377,8 @@ font-weight: 100;
 	font-size: 30px;
 	text-transform: uppercase;
 	letter-spacing: 0.8px;
-	margin-right: 173px;
+	margin-top: -55px;
+	margin-right: 170px;
   }
 
 
@@ -1424,10 +1427,10 @@ font-weight: 100;
 	margin: 0 0 39px 0;
 }
 .adress {
-  float: left;
+  display: inline-block;
   width: inherit;  
   margin-left: 4px;
-	margin-right: -40px;
+	margin-right: 85px;
   color: #f1f5f7;
 	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 18px;
@@ -1438,7 +1441,7 @@ font-weight: 100;
 	display: inline-block;
 	width: inherit;
 	list-style: none;
-	margin: 10px 0 0 129px;
+	margin: 10px 0 0 0px;
 	padding: 0 0 0 0;
 	
 }
@@ -1487,15 +1490,11 @@ font-weight: 100;
 	position: relative;
   display: inline-block;
 	padding-top: 5px;
-	margin: 0  181px 30px 0;
+	margin: 0  126px 30px 0;
   width: auto;
 }
 .social .vk { 
-	position: absolute;
-	font-family: "symbols-technomart";
-	background: #293449;
-	top: 0;
-	left:-8px;
+	display: inline-block;	
 	width: 40px;
 	height: 40px;
 	background: #212a3a;
@@ -1506,16 +1505,12 @@ font-weight: 100;
 	font-family: "symbols-technomart";
 	content: "\76"; 
 	background: #212a3a;
-	top: 10px;
-	left:12px;
+	top: 16px;
+	left:11px;
 	
 }
 .social .fb { 
-	position: absolute;
-	font-family: "symbols-technomart";
-	background: #293449;
-	top: 0;
-	left:35px;
+	display: inline-block;	
 	width: 40px;
 	height: 40px;
 	background: #212a3a;
@@ -1526,18 +1521,13 @@ font-weight: 100;
 	font-family: "symbols-technomart";
 	content: "\66"; 
 	background: #212a3a;
-	top: 10px;
-	left:15px;
+	top: 16px;
+	left:59px;
 	
 }
 
 .social .inst { 
-	position: absolute;
-	font-family: "symbols-technomart";
-	content: "\1f4f7"; 
-	background: #293449;
-	top: 0;
-	left:78px;
+	display: inline-block;	
 	width: 40px;
 	height: 40px;
 	background: #212a3a;
@@ -1548,14 +1538,14 @@ font-weight: 100;
 	font-family: "symbols-technomart";
 	content: "\1f4f7"; 
 	background: #293449;
-	top: 10px;
-	left:13px;
+	top: 16px;
+	left: 102px;
 	
 }
 
 .mail{
   display: inline-block;
-  margin-right: 34px;
+  margin-right: 24px;
   width: 150px;
 	font-family: "cuprum", Arial, sans-serif;
 	font-size: 16px;
@@ -1723,9 +1713,8 @@ color: #b7bfc8;
 
 .content-left {
   float: left;
-  width: 220px;
-  display: inline-block;
-  margin-right: 20px;
+  width: 230px;
+  margin: 0px;
 }
 .content-name {
   margin: 0;
@@ -1807,7 +1796,7 @@ border-bottom: 1px solid #e5e5e5;
 }
 
 .max-price{
-	margin-left: 3px;
+	margin-left: -2px;
 	
 }
 
@@ -1831,7 +1820,7 @@ border-bottom: 1px solid #e5e5e5;
 input[type="radio"] + label::before,
 input[type="checkbox"] + label::before {
     position: absolute;
-    top: 0;
+    top: -7px;
     left: -35px;
     font-size: 30px;
     font-family: "symbols-technomart";
@@ -1893,14 +1882,16 @@ input[type="checkbox"] ~ h3 {
 }
 /*сортировка товаров функионал, тип, цена*/
 .content-right {
-  display: inline-block;
+  float: right;
   width: 700px;
+	margin: 0;
+	box-sizing: border-box;
+	
 }
 
 .content-right-filter {
 	position: relative;
-  height: 38px;
-	width: auto;
+  height: 38px;	
   margin-bottom: 0px;
   background: #f7f3ec;
 	font-family: "PT Sans", Arial, sans-serif;
