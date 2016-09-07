@@ -66,15 +66,18 @@ body {
 .icon-instagramm::before { content: "📷"; } /* "\1f4f7" */
 
 .icon-bookmark::before { content: "🔖"; } /* "\1f516" */
-
+.body {
+	font-size: 0;
+}
 a {
   text-decoration: none;
 }
 
-/*Верхний футер */
+/*Верхний хедер */
 
 .main-header {
   background: #f1f5f7;
+	padding-bottom: 60px;
 }
 .header-top {  
   margin-bottom: 50px;  
@@ -120,21 +123,39 @@ background: #ba2732;
   vertical-align: top;  
   margin: 0 -4px;
   width: 270px;
-	padding-top: 11px;
-	padding-bottom: 11px;
+	padding: 11px 0px 11px 40px;
   background: #293449;
   border: #293449;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 17px;
   font-weight: 400;  
-  color: white;  
+  color: white;
+}
+.header-top-left label{
+	position: relative;
+}
+
+
+.header-top-left label::before { 
+	 position: absolute;
+    top: -31px;
+    left: 233px;
+    font-size: 17px;
+    font-family: "symbols-technomart";
+    font-style: normal;
+    font-weight: normal;
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: inherit;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    content: "\1f50d";
+    cursor: pointer;
+    color: #6a7180;
 
 }
-.header-top-left input::before { 
-	position: absolute;
-	font-family: "symbols-technomart";
-	content: "🔍"; 
-} /* "\1f50d" */
+
 
 .header-top-left input:hover {
 background: #212a3a;
@@ -143,7 +164,7 @@ color: #d3d4d8;
 
 .header-top-left input:focus {
 background: #ffffff;
-color: #333333;
+color: white;
 }
 
 .header-top-right {
@@ -166,16 +187,7 @@ color: #333333;
 .header-top-right a:first-child {
 	position: relative;
   margin-left: -40px;
-  margin-right: 0;
   width: 110px;
-}
-.header-top-right a:first-child::before {
-	font-family: "symbols-technomart";
-	content: "\1f516";
-	position: absolute;
-	top: 10px;
-	left: 10px;
- 
 }
 
 .header-top-right a:first-child:hover {
@@ -190,8 +202,16 @@ color: #333333;
 .header-top-right .empty {
 	position: relative;
   margin-left: -4px;
-  width: 100px;
+  width: 100.5px;
 }
+.header-top-right a:first-child::before {
+	font-family: "symbols-technomart";
+	content: "\1f516";
+	position: absolute;
+	top: 10px;
+	left: 10px; 
+}
+
 .empty::before { 
 	font-family: "symbols-technomart";
 	position: absolute;
@@ -223,7 +243,7 @@ color: #333333;
 
 .header-top-right a:last-child {
   float: right;  
-  width: 133px;  
+  width: 133px;
   padding: 12px 0px 12px 16px;
   background: #63a63e;
 }
@@ -238,7 +258,7 @@ color: #333333;
 }
 
 
-/*Средний футер */
+/*Средний хедер */
 .header-middle {
   margin-bottom: 5px;
 }
@@ -353,7 +373,7 @@ color: #333333;
 .user-box .registration:active {
   color: #b2b2b2;
 }
-/*Нижний футер*/
+/*Нижний хедер*/
 .main-navigation {
 	display: block;
   padding-left: 0px;  
@@ -740,6 +760,38 @@ background-color: #293449;
 	cursor: pointer;
 	box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.8);
 }
+.slider-controls label:first-child::before {
+	position: absolute;
+	line-height: 40px;
+	font-family: "symbols-technomart";
+	content: "\3c";
+	bottom: 80px;
+	right: 290px;	
+	color: #ffffff;
+	font-size: 40px;
+}
+.slider-controls label:first-child:hover::before {
+	color: red;
+}
+.slider-controls label:last-child:hover::before {
+	color: red;
+}
+.slider-controls label:first-child:active::before {
+	color: rgba(255, 255, 255, .6);
+}
+.slider-controls label:last-child:active::before {
+	color:rgba(255, 255, 255, .6);
+}
+.slider-controls label:last-child::before {
+	position: absolute;
+	content: "\3e";
+	line-height: 40px;
+	font-family: "symbols-technomart";
+	bottom: 80px;
+	left: 290px;
+	color: #ffffff;
+	font-size: 40px;
+}
 .slider-inner {
     overflow: hidden;
 }
@@ -808,13 +860,14 @@ background-color: #293449;
 }
 
 .catalog-item {
-	width: inherit;
 	font-size: 0;
+	padding: 0;
 }
 
 .item {  
 	position: relative;
-  width: 218px;
+  width: 220px;
+	box-sizing: border-box;
   border: solid #e5e5e5 1px;
 	font-weight: 600;
 	text-align: center;
@@ -825,6 +878,10 @@ background-color: #293449;
 	margin-top: 20px;
 	margin-right: 20px;
 	margin-bottom: 20px;
+	overflow: hidden;
+}
+.item:hover {
+	box-shadow: 0 5px 15px 3px #bababa;
 }
 .new:before{
 	position: absolute;
@@ -847,6 +904,7 @@ background-color: #293449;
   background-color: #fff; 
 }
 .selected .buy, .selected .bookmarks {
+	position: relative;
 	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 14px;
 	text-decoration: none;
@@ -860,9 +918,10 @@ background-color: #293449;
 	border-radius: 3px;
 }
 
-.selected .buy {
+.selected .buy {	
 	box-shadow: inset 0 -3px 0 #367315;
 }
+
 .selected .bookmarks {
   width: 129px;
   padding: 7px 0;
@@ -875,6 +934,19 @@ background-color: #293449;
 }
 .item:hover .selected {
 	display: block;
+}
+.selected .buy:hover {
+	background-color: #367315;
+}
+.selected .buy:active {
+	background-color: #63a63e;
+}
+.selected .bookmarks:hover {
+	border: 3px solid #32425c;
+}
+.selected .bookmarks:active {
+	border: 3px solid #32425c;
+	opacity: .3;
 }
 .catalog-item-img { 
 	width: 218px;
@@ -895,6 +967,7 @@ background-color: #293449;
 .catalog-item .old-price {
 	min-height: 20px;
 	margin: 0 0 10px 0;
+	min-height: 23px;
   text-decoration: line-through;
   color: #999999;
 }
@@ -914,18 +987,20 @@ background-color: #293449;
 	right: -20px;
 	width: 0;
 	height: 0;
-	content: ' ';
+	content: '';
 	border: 21px solid #fff;
 	border-left-color:#ee3643;
 }
-.item:last-child .new-price {
-  margin-top: 45px;
-}
+
 .botton-container .item:nth-child(4n) {
   margin-right: 0;
 }
+
+
 .container-logo {
+	font-size: 0;
   height: auto;
+	 margin-top: 20px;
   margin-bottom: 51px;
 	
 }
@@ -938,10 +1013,11 @@ vertical-align: middle;
 .container-logo a {
   display: inline-block;
   vertical-align: middle;
-  width: 218px;
-  margin-top: 20px;
-  margin-right: 15px;
-  margin-bottom: 0px;
+  width: 220px;
+	height: 145px;
+	box-sizing: border-box;
+	margin-right: 20px;
+	margin-bottom: 20px;
   border: solid #e7e7e7 1px;
   background: white;
 	overflow: hidden;
@@ -949,11 +1025,17 @@ vertical-align: middle;
 }
 
 .container-logo a:nth-child(4n) {
-  margin-top: 20px;
+  
   margin-right: 0px;
-  margin-bottom: 0px;
+  
 }
-                          /*СЛАЙДЕР СЕРВИСА*/
+.container-logo a:hover {
+	box-shadow: 0 10px 25px 0 rgba(41,52,73,.5);
+}
+  .container-logo a:active {
+	box-shadow: 0 4px 10px 0 rgba(41,52,73,.5);
+	opacity: .3;
+}                        /*СЛАЙДЕР СЕРВИСА*/
 .service { 
 	position: relative;
 	padding: 30px  0 20px 0;
@@ -1002,8 +1084,8 @@ vertical-align: middle;
 
 .delivery-slide {
 	position: absolute;
-	bottom: 130px;
-	left: 260px;
+	bottom: 115px;
+	left: 280px;
   display: none;
 	vertical-align: top;
   width: 330px;
@@ -1013,43 +1095,54 @@ vertical-align: middle;
 }
 .delivery-slide .title{
 	font-family: "Cuprum", Arial, sans-serif;
-  font-size: 26px;
+  font-size: 36px;
   font-weight: 400;
 	text-transform: uppercase;
 }
 .delivery-slide .description
 {
-	font-family: "Cuprum", Arial, sans-serif;
-  font-size: 16px;
+	font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
   font-weight: 400;
 }
 .guaranty-slide {
 	display: none;
 	position: absolute;
-	bottom: 25px;
-	left: 260px;
+	bottom: 95px;
+	left: 280px;
   display: none;
 vertical-align: top; 
   width: 330px;
   color: #32425c;
+	padding: 0;
 	margin: 0;
 }
 .guaranty-slide .title{
 	font-family: "Cuprum", Arial, sans-serif;
-  font-size: 26px;
+  font-size: 36px;
   font-weight: 400;
 	text-transform: uppercase;
 }
-.guaranty-slide .description {
-	font-family: "Cuprum", Arial, sans-serif;
-  font-size: 16px;
+.guaranty-slide .description-1 {
+	font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
   font-weight: 400;
+	width: 350px;
+	margin: 0;	
+	
+}
+.guaranty-slide .description-2 {
+	font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+	width: 300px;
+	margin: 0;
 	
 }
 .credit-slide {
 	position: absolute;
-	bottom: 150px;
-	left: 260px;
+	bottom: 75px;
+	left: 280px;
   display: none;
 vertical-align: top;
   display: none;
@@ -1060,15 +1153,30 @@ vertical-align: top;
 
 .credit-slide .title{
 	font-family: "Cuprum", Arial, sans-serif;
-  font-size: 26px;
+  font-size: 36px;
   font-weight: 400;
 	text-transform: uppercase;
 }
 .credit-slide .description {
-	font-family: "Cuprum", Arial, sans-serif;
-  font-size: 16px;
+	font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
   font-weight: 400;
+	margin-bottom: 30px;
 	
+}
+.credit-slide a{
+  display: block;
+  vertical-align: top;
+  margin-top:0px;
+  text-align: center;
+  padding: 12px 40px 10px;
+  width: 140px;
+  background: #ee3643;
+  color: white;
+  text-decoration: none;
+	font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+	text-transform: uppercase;
 }
 
 #btn1:checked ~ .vertical-slider label[for="btn1"],
@@ -1143,16 +1251,29 @@ font-weight: 100;
 	font-weight: regular;
 }
 .company-left ul{
+	padding: 0;
 	margin-top: -6px;
 	margin-left: -5px;
 	margin-bottom: 5px;
 	list-style: none;
 }
-.company-left li{
+
+.company-left li {
+	position: relative;
+	padding-left: 35px;
 	margin-bottom: 15px;
 	font-family: "PT sans", Arial, sans-serif;
   font-size: 18px;
 	font-weight: 600;
+}
+.company-left li::before {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -1px;
+    width: 25px;
+    border-bottom: 2px solid #fb565a;
 }
 
 .company-left a{
@@ -1243,18 +1364,20 @@ font-weight: 100;
   float: left;
   text-align: center;
   vertical-align: middle;
-  padding: 15px 0 0px;
+  padding: 9px 0 2px;
   width: 220px; 
   background: #ee3643;
   color: white;
   text-decoration: none;
   font-size: 30px;
-  border-bottom: solid #b72f38 5px; 
+  box-shadow: 0 5px 0 0 #b72f38; 
 	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 30px;
 	text-transform: uppercase;
+	letter-spacing: 0.8px;
 	margin-right: 173px;
   }
+
 
 .footer-top-content .logo:hover {
   background: #ca2c37;
@@ -1281,16 +1404,17 @@ font-weight: 100;
 .promo-1 a {
   color: #f1f5f7;
 }
+
 .promo-1 a:hover {
   border-bottom: solid #f1f5f7 1px;
   }
+
   .promo-1 a:active {
     color: #788495;
   border-bottom: none;
   }
 
-
- .promo-1 a:last-child{
+.promo-1 a:last-child{
   margin-right: 0px;
   }
 
@@ -1359,40 +1483,76 @@ font-weight: 100;
 .footer-bottom  a{
   color: #d4b275;
 }
-.social{
+.social {
 	position: relative;
   display: inline-block;
-	margin: 0 181px 0 0;
+	padding-top: 5px;
+	margin: 0  181px 30px 0;
   width: auto;
 }
-.social a:first-child::before { 
+.social .vk { 
 	position: absolute;
 	font-family: "symbols-technomart";
-	content: "\76"; 
 	background: #293449;
-	
+	top: 0;
+	left:-8px;
+	width: 40px;
+	height: 40px;
+	background: #212a3a;
+	border-radius: 50%;
 }
 .social .vk::before { 
 	position: absolute;
 	font-family: "symbols-technomart";
 	content: "\76"; 
-	background: #293449;
+	background: #212a3a;
+	top: 10px;
+	left:12px;
 	
+}
+.social .fb { 
+	position: absolute;
+	font-family: "symbols-technomart";
+	background: #293449;
+	top: 0;
+	left:35px;
+	width: 40px;
+	height: 40px;
+	background: #212a3a;
+	border-radius: 50%;
 }
 .social .fb::before { 
 	position: absolute;
 	font-family: "symbols-technomart";
 	content: "\66"; 
-	background: #293449;
+	background: #212a3a;
+	top: 10px;
+	left:15px;
 	
+}
+
+.social .inst { 
+	position: absolute;
+	font-family: "symbols-technomart";
+	content: "\1f4f7"; 
+	background: #293449;
+	top: 0;
+	left:78px;
+	width: 40px;
+	height: 40px;
+	background: #212a3a;
+	border-radius: 50%;
 }
 .social .inst::before { 
 	position: absolute;
 	font-family: "symbols-technomart";
 	content: "\1f4f7"; 
 	background: #293449;
+	top: 10px;
+	left:13px;
 	
 }
+
 .mail{
   display: inline-block;
   margin-right: 34px;
@@ -1400,6 +1560,7 @@ font-weight: 100;
 	font-family: "cuprum", Arial, sans-serif;
 	font-size: 16px;
 	line-height: 2px;
+	
 }
 
 .mail a:hover{
@@ -1439,7 +1600,7 @@ border-bottom: solid #ffd180 1px;
 ===================================================*/
 
 
-/*Равшан*/
+
 .user-box .login{
   display: inline-block;
 	vertical-align: top;
@@ -1498,27 +1659,46 @@ color: #b7bfc8;
 
 }
 
-.bradcrumps ul {
+.bradcrumps  {
+		position: relative;
   margin: 0;
   padding: 0;
   list-style: none;
   height: 60px;
 }
+.bradcrumps::before {
+	position: absolute;
+	font-size: 16px;
+	font-family: "symbols-technomart";
+	content: "🏠"; 
+	top: 22px;
+	color: #c1c6ce;	
+}
 
 .bradcrumps li {
+	position: relative;
   display: inline-block;
-  margin: 1px 35px 0 0;
-  padding: 20px 0 0 0;
+  margin-left: 5px;
+  padding: 20px 20px  0 0;
 	font-family: "PT Sans", Arial, sans-serif;
 	text-transform: uppercase;
-	font-size: 13px;
-	
+	font-size: 16px;
 }
+
+.bradcrumps li::before {	
+	position: absolute;
+	content: "\3e";		
+	left: -18px;
+	font-size: 12px;
+	color: #c1c6ce;	
+	top: 23px;
+}
+
 .bradcrumps a {
-  width: 115px;
   color: black;
 	
 }
+
 .shop-title {
   padding: 26px 0 38px 28px;
   height: 24px;
@@ -1583,7 +1763,7 @@ color: #b7bfc8;
   background: #d7dcde;
 }
 .range-controls .bar {
-  width: 70%;
+  width: 10%;
   height: 2px;
   background: #00ca74;
 }
@@ -1604,57 +1784,112 @@ color: #b7bfc8;
 }
 
 .range-controls .toggle-max {
-  left: 170px;
+  left: 150px;
 }
 .price-box input{
+	position: relative;
 	display: inline-block;
-  width: 100px;
+  width: 85px;
   height: 33px;
-  background: #f7f3ec;  
-  margin-bottom: 40px;
+  background: #f7f3ec;
+	margin-right: 5px;
+  margin-bottom: 25px;
+	margin-left: 6px;
 	border: none;
   border-radius: 5px;
   outline: none;
   background: #f7f3ec;
+	text-align: center;
+	
 }
+.price-box {
+border-bottom: 1px solid #e5e5e5;
+}
+
 .max-price{
-	margin-left: 15px;
+	margin-left: 3px;
+	
 }
 
 .filter-produser h2 {
   display: inline-block;
-  margin: 0 0 20px 0;
-}
-.filter-produser ul {
-  width: 140px;
-  list-style: none;
-  margin: 0;
-}
-.filter-produser li {
-  display: inline-block;
-  width: inherit;
-	padding-left: 20px;
-  margin: 0 0 15px -45px;
-	font-family: "PT Sans", Arial, sans-serif;
-	font-size: 15px;
-	text-transform: uppercase;
-}
-.filter-produser li:last-child {
-  margin-bottom: 60px;
-}
-.filter-produser p {
-  margin: -5px 0 0 0;
-	font-family: "PT Sans", Arial, sans-serif;
-	font-size: 15px;
-	text-transform: uppercase;
-}
-.filter-produser p:last-child {
-  margin: 10px 0 75px 0;
+  margin: 25px  0 20px 0;
 }
 
-.filter-btn {
-  width: 140px;
-  height:38px;
+.filter-produser input[type="radio"],
+.filter-produser input[type="checkbox"] {
+    display: none;
+}
+
+.filter-produser label {
+		display: block;
+    position: relative;
+    margin-left: 35px;
+    margin-bottom: 20px;
+}
+
+input[type="radio"] + label::before,
+input[type="checkbox"] + label::before {
+    position: absolute;
+    top: 0;
+    left: -35px;
+    font-size: 30px;
+    font-family: "symbols-technomart";
+    font-style: normal;
+    font-weight: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    content: "\25cb";
+    color: #c1c1c1;
+}
+
+input[type="checkbox"] + label::before {
+    content: "\2610";
+}
+
+input[type="radio"]:checked + label::before {
+    content: "\25cf";
+}
+
+input[type="checkbox"]:checked + label::before {
+    content: "\2611";
+}
+
+input[type="radio"] + label:hover::before,
+input[type="checkbox"] + label:hover::before {
+    color: #b5b5b5;
+}
+
+input[type="radio"]:disabled + label::before,
+input[type="checkbox"]:disabled + label::before {
+    color: #e9e9e9;
+}
+
+input[type="checkbox"] ~ h3 {
+    padding-top: 19.5px;
+    border-top-style: solid;
+    border-top-width: 2px;
+    border-top-color: #e5e5e5;
+}
+
+
+.form-btn {
+    margin: 50px 0 0 0;
+    padding: 9px 0;
+    width: 140px;
+    text-transform: uppercase;
+    font-family: "PT Sans" ,Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #000;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+    background-color: #fff;
+    outline: none;
 }
 /*сортировка товаров функионал, тип, цена*/
 .content-right {
@@ -1663,6 +1898,7 @@ color: #b7bfc8;
 }
 
 .content-right-filter {
+	position: relative;
   height: 38px;
 	width: auto;
   margin-bottom: 0px;
@@ -1673,6 +1909,20 @@ color: #b7bfc8;
 
 }
 
+.btn-filter a:first-child::after {
+	position: absolute;
+	content: "\25b2";
+	top: 10px;
+	right: 50px;
+	color: #ee3643;
+}
+.btn-filter a:last-child::after {
+	position: absolute;
+	content: "\25bc";
+	top: 10px;
+	right: 20px;
+	color: #c6c2bd;
+}
 .content-right-filter h3 {
   display: inline;
   width: 150px;
@@ -1690,6 +1940,10 @@ color: #b7bfc8;
   color: #b2b2b2 ;
   border-bottom: dashed #ee3643 1px;
   }
+.content-right-filter a:nth-child(2) {
+	color: #ee3643;
+	border-bottom: none;
+}
   .content-right-filter a:hover {
     color: #000000;
     border-bottom: solid #ee3643 1px;
@@ -1698,7 +1952,6 @@ color: #b7bfc8;
   color: #ee3643;
   border-bottom: none;
 }
-
   .content-right-filter a:nth-child(4n)  {
 		margin-left: -5px;
     margin-right: 0;
@@ -1717,6 +1970,55 @@ color: #b7bfc8;
 .content-right .item:nth-child(3n+3) {
 	margin-right: 0;
 }
+.btn-page span {
+	display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    margin-right: 10px;
+    padding: 10px 0 8px;
+    width: 36px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    font-family: PS Sans,Arial,sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #ffffff;
+    background-color: #ee3643;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+}
+.btn-page a:hover {
+	 border: 1px solid #bdc6ca;
+}
+.btn-page a:active {
+	 border: 1px solid #ee3643;
+}
+.btn-page a{
+	display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    margin-right: 10px;
+    padding: 10px 0 8px;
+    width: 36px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    font-family: PS Sans,Arial,sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+	
+}
+.btn-page a:last-child {
+	width: 100px;
+}
+
 /*информация внизу страницы*/
 .content-bottom { 
 	margin-top: 26px;
@@ -1735,8 +2037,9 @@ color: #b7bfc8;
 .content-bottom p {
  width: inherit;
 	font-family: "PT Sans", Arial, sans-serif;
-	font-size: 14px;
-	line-height: 13px
+	font-size: 13px;
+	line-height: 24px;
+		margin: 0;
 }
 
 
