@@ -45,3 +45,28 @@ function toggleFormMap(event) {
 	event.preventDefault();
 	mapPopup.classList.toggle("show-map");
 }
+var linkItemAdded = document.querySelectorAll(".buy");
+var cancelItemAdded = document.querySelector(".continue-btn")
+var popUpItemAdded = document.querySelector(".item-added");
+
+
+
+
+for (var i = 0; i < linkItemAdded.length; i++) {
+    linkItemAdded[i].addEventListener("click", function(event) {
+        event.preventDefault();
+        popUpItemAdded.classList.add("item-added-show");
+    });
+}
+
+
+cancelItemAdded.addEventListener("click", function(event) {
+    event.preventDefault();
+    popUpItemAdded.classList.remove("item-added-show");
+});
+
+window.addEventListener("keydown", function(event) {
+  if (event.keyCode == 27 && popUpItemAdded.classList.contains("item-added-show")) {
+    popUpItemAdded.classList.remove("item-added-show");
+  }
+});

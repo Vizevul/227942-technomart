@@ -9,48 +9,42 @@
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&subset=cyrillic" rel="stylesheet">
 </head>
 <body>
-	<header class="main-header">		
-		<div class="header-top clearfix">
+	<body>
+	<header class="header-row main-header">
+		<div class="header-upper-row">
 			<div class="container">
-				<div class="header-top-left">
-					<a class="logo" href="#">Техномарт</a>	
-					<form action="/search" method="post">					
-						<input class="search" id="search" type="search" placeholder="Поиск:">
+				<a href="#" class="header-upper-logo">Техномарт</a>
+				<div class="header-search icon-search">
+					<form action="/search" method="post">
+						<input type="search" name="search" id="search" placeholder="Поиск:" required>		
 						<label for="search"></label>
 					</form>
 				</div>
-				<div class="header-top-right">
-					<a href="#">Закладки: 0</a>
-					<a class="empty" href="#">Корзина: 0</a>
-					<a href="#">Оформить заказ</a>
-				</div>
+				<a href="#" class="header-bookmarks">Закладки: 0</a>
+				<a href="#" class="header-cart">Корзина: 0</a>
+				<a href="#" class="header-order">Оформить заказ</a>
 			</div>
 		</div>
 		<div class="container">
-			<div class="header-middle clearfix">
-				<div class="middle-info">
-					<p>Интернет-магазин строительных материалов</p> 
-					<p>и инструментов для ремонта</p>
+			<div class="header-middle-row clearfix">
+				<p class="header-middle-partition header-middle-description">Интернет-магазин строительных материалов<br>и инструментов для ремонта</p>
+				<div class="header-middle-contacts">
+					<p class="header-contacts-phone">+7 (812) 555-05-55</p>
+					<p class="header-contacts-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 				</div>
-				<div class="middle-contacts">
-					<p>+7 (812) 555-05-55</p>
-					<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-				</div>
-				<div class="user-box">
-					<a class="enter" href="#">Войти</a>
-					<a class="registration" href="#">Регистрация</a>
+				<div class="header-middle-user user-connected">
+					<a href="#" class="header-user-enter icon-logout">Войти</a>
+					<a href="#" class="header-user-registration">Регистрация</a>
 				</div>
 			</div>
-			<nav class="main-navigation">
-				<ul>
-					<li><span>Главная</span></li>
-					<li><a href="#">Компания</a></li>
-					<li><a href="catalog.html">Каталог</a></li>
-					<li><a href="#">Новости</a></li>
-					<li><a href="#">Спецпредложения</a></li>
-					<li><a href="#">Доставка</a></li>
-					<li><a href="#">Контакты</a></li>
-				</ul>
+			<nav class="header-bottom-row">
+				<a href="#">Главная</a>
+				<a href="#">Компания</a>
+				<a href="catalog.html">Каталог</a>
+				<a href="#">Новости</a>
+				<a href="#">Спецпредложения</a>
+				<a href="#">Доставка</a>
+				<a href="#">Контакты</a>
 			</nav>
 		</div>
 	</header>
@@ -167,7 +161,7 @@
 					</article>				
 					<article class="item">
 						<div class="selected">
-							<a href="" class="buy">Купить</a>
+							<a href="#" class="icon-basket item-btn buy">Купить</a>
 							<a href="" class="bookmarks">В закладки</a>
 						</div>
 						<div class="catalog-item-img">
@@ -335,8 +329,16 @@
 	<div class="map">
 		<button type="button" class="modal-close-btn-map" title="Закрыть"></button>
 		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6044048541382!2d30.32344483618726!3d59.93870623443853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1473444997477" width="940" height="477" frameborder="0" style="border:0" allowfullscreen></iframe>
-	</div>
-		
+	</div>	
+	<section class="pop-up item-added">
+      <div class="main-block">
+        <p class="main-block-text">Товар добавлен в корзину!</p>
+      </div>
+      <div class="control-block">
+        <a class="btn make-order-btn" href="#">Оформить заказ</a>
+        <a class="continue-btn" href="#">Продожить покупки</a>
+      </div>
+    </section>	
 	<div class="modal-content-write">
 	<button type="button" class="modal-close-btn" title="Закрыть"></button>
 		<form action="/echo" method="post">
